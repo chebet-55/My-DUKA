@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.datatables.net/2.0.6/css/dataTables.bootstrap5.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-</html>
+
+<body style="color:blue;">
+    <!-- Icon Font Stylesheet -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
+
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="/static/style.css"> -->
+
+
+    </head>
+
+    <body style="background-color: bisque;">
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                                class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
+                                class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
+                                class="fab fa-youtube fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="/register"><small class="me-3 text-light"><i
+                                    class="fa fa-user me-2"></i>Register</small></a>
+                        <a href="/login"><small class="me-3 text-light"><i
+                                    class="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>My Duka</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="/products" class="nav-item nav-link">Products</a>
+                        <a href="/sales" class="nav-item nav-link">Sales</a>
+                        <a href="/dashboard" class="nav-item nav-link">Dashboard</a>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+        <!-- Navbar & Hero End  -->
+
+        <!-- </html>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">MY DUKA</a>
+    <div class="container">
+        <a class="navbar-brand" href="/" style="font-size: 60px;  ">MY DUKA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,54 +98,115 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/"
+                        style="margin-left:40%;font-size:30px;">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/dashboard">dashboard</a>
+                    <a class="nav-link" href="/dashboard" style="margin-left: 60%;font-size: 30px;">dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/sales">sales</a>
+                    <a class="nav-link" href="/sales" style="margin-left: 180%;font-size: 30px;">sales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products">products</a>
+                    <a class="nav-link" href="/products" style="margin-left: 150%;font-size: 30px;">products</a>
                 </li>
             </ul>
         </div>
     </div>
-</nav>
+</nav><br> -->
 
 
-<h1>MY PRODUCTS</h1>
-<table class="table table-bordered border-primary">
-    <tr>
-        <th>id</th>
-        <th>products name</th>
-        <th>buying price</th>
-        <th>selling price</th>
-        <th>stock quantity</th>
+        <h1>MY PRODUCTS</h1><br>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Add Products
+        </button><br><br>
 
-    </tr>
-    <tr> 
-        <td>1</td>
-        <td>milk</td>
-        <td>30</td>
-        <td>50</td>
-        <td>2</td>
-    </tr><tr> 
-        <td>1</td>
-        <td>milk</td>
-        <td>30</td>
-        <td>50</td>
-        <td>2</td>
-    </tr>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"> product details</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/Add_products" method="post">
+                            <label for="products name"></label><br>
+                            <input type="text" name="product_name" placeholder="products_name"><br>
+                            <label for="buying price"></label><br>
+                            <input type="Number" name="buying_price" placeholder="buying_price"><br>
+                            <label for="selling price"></label><br>
+                            <input type="Number" name="selling_price" placeholder="selling_price"><br>
+                            <label for="stock quantity"></label><br>
+                            <input type="Number" name="stock_quantity" placeholder="stock_quantity"><br>
+                            <button type="SUBMIT" class="btn btn-primary">ADD</button>
 
-  </table>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
 
-</body>
+        <table id="example" class="display compact" style="width:100%">
+            <thead>
+                <tr>
+                    <th scope="">id</th>
+                    <th>products name</th>
+                    <th>buying price</th>
+                    <th>selling price</th>
+                    <th>stock quantity</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in prods %}
+                <tr>
+                    <td>{{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                    <td>{{i[2]}}</td>
+                    <td>{{i[3]}}</td>
+                    <td>{{i[4]}}</td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+            <!-- <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </tfoot> -->
+        </table>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.datatables.net/2.0.6/js/dataTables.js"></script>
+        <script src="https://cdn.datatables.net/2.0.6/js/dataTables.bootstrap5.js"></script>
+
+        <script>
+            new DataTable('#example');
+        </script>
+    </body>
+
 </html>
+
 </html>
